@@ -23,6 +23,7 @@ include $(INCLUDE_DIR)/package.mk
 define Package/shadowsocksr/Default
   SECTION:=net
   CATEGORY:=Network
+  PKGARCH:=all
   TITLE:=Lightweight Secured Socks5 Proxy
   URL:=https://github.com/shadowsocksr/shadowsocksr-libev
 endef
