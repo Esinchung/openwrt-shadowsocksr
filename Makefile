@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=shadowsocksr
-PKG_VERSION:=20170509
+PKG_VERSION:=20170519
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE).tar.gz
 PKG_SOURCE_URL:=https://github.com/shadowsocksr/shadowsocksr-libev.git
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=39ec29efede90edcd095596dead3692ea3ad7491
+PKG_SOURCE_VERSION:=7247ef771ccb8ea7c6de02dc152a8be155931eba
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=breakwa11
 
@@ -65,7 +65,7 @@ define Package/shadowsocksr/install
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/ss-local $(1)/usr/bin/ssr-local
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/ss-redir $(1)/usr/bin/ssr-redir
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/ss-tunnel $(1)/usr/bin/ssr-tunnel
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/ss-local $(1)/usr/bin/ssr-tunnel
 endef
 
 
