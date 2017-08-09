@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=shadowsocksr
-PKG_VERSION:=20170613
-PKG_RELEASE:=3
+PKG_VERSION:=20170809
+PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE).tar.gz
-PKG_SOURCE_URL:=https://github.com/monokoo/shadowsocksr-libev.git
+PKG_SOURCE_URL:=https://github.com/shadowsocksrr/shadowsocksr-libev.git
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=d9d045883ec937d3aed65d59f4a19d9eb606a59f
+PKG_SOURCE_VERSION:=9a2365ce6774dddd5561322881aef726c7990639
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=breakwa11
 
